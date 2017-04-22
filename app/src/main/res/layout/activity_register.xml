@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.drbt.fireblog.RegisterActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:ems="10"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/input_outline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/reg_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:hint="Email..."
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/reg_name"
+        android:id="@+id/reg_email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/reg_email"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/reg_password" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/reg_button"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"/>
+</RelativeLayout>
